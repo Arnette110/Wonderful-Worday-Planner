@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <title>Day Scheduler</title>
     <!-- Required meta tags -->
@@ -7,26 +8,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
+
   <body>
 
-    <div class="form-group">
-      <label for=""></label>
-      <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-      <small id="helpId" class="form-text text-muted"></small>
-    </div>
-      
-    <!-- Optional JavaScript -->
-    
-    
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    
+    <!-- Display title and description of app along with current date and time -->
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="col-sm time-block">
+          <div class="hour">09:00</div>
+          <textarea id="9" data-value="9"></textarea>
+          <button type="submit" class="saveBtn"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm time-block">
+          <div class="hour">10:00</div>
+          <textarea id="10" data-value="10"></textarea>
+          <button type="submit" class="saveBtn"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm time-block">
+          <div class="hour">11:00</div>
+          <textarea id="11" data-value="11"></textarea>
+          <button type="submit" class="saveBtn"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm time-block">
+          <div class="hour">12:00</div>
+          <textarea id="12" data-value="12"></textarea>
+          <button type="submit" class="saveBtn"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm time-block">
+          <div class="hour">13:00</div>
+          <textarea id="13" data-value="13"></textarea>
+          <button type="submit" class="saveBtn"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm time-block">
+          <div class="hour">14:00</div>
+          <textarea id="14" data-value="14"></textarea>
+          <button type="submit" class="saveBtn"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm time-block">
+          <div class="hour">15:00</div>
+          <textarea id="15" data-value="15"></textarea>
+          <button type="submit" class="saveBtn"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm time-block">
+          <div class="hour">16:00</div>
+          <textarea id="16" data-value="16"></textarea>
+          <button type="submit" class="saveBtn"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm time-block">
+          <div class="hour">17:00</div>
+          <textarea id="17" data-value="17"></textarea>
+          <button type="submit" class="saveBtn"><i class="far fa-save"></i></button>
+        </div>
+      </div>
+
+
+
+
+
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS, then Moment.js-->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <!-- Optional JavaScript -->
+      <script src="assets/js/script.js"></script>
+
   </body>
+
 </html>
