@@ -8,7 +8,7 @@ https://arnette110.github.io/Wonderful-Worday-Planner/
 
 ## Instructions
 - Once the page loads your are presented with the current date and time toward the top of the page and a list of color coded time slots below
-- - *note - if the time slot is grey it means that it is in the past; if red then it is the current hour of the day; if green then it is in the      future
+  - *note - if the time slot is grey it means that it is in the past; if red then it is the current hour of the day; if green then it is in the      future
 - Click inside any of the colored time slots and type anything you wish to save to that time slot
 - If you would like to save the information you just typed simply click the Save button to the right of the corresponding time slot
 - The information you typed in will now be saved to the corresponding time slot. If you refresh the page the information you saved will still     be visible where it was originally typed
