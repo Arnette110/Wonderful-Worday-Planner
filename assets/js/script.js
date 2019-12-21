@@ -8,7 +8,7 @@ function update() {
     dateTime.html(date.format("dddd, MMMM Do YYYY, H:mm:ss"));
 };
 
-
+// function waits for document to load before running other functions
 $(document).ready(function(){
     
     
@@ -58,7 +58,7 @@ $(saveBtn).on("click", function(event) {
 
 
 
-
+// function to retrieve stored data from localStorage
 function getLS () {
     $("txtArea, #9").val(localStorage.getItem("9"));
     $("txtArea, #10").val(localStorage.getItem("10"));
@@ -71,5 +71,6 @@ function getLS () {
     $("txtArea, #17").val(localStorage.getItem("17"));
 
 }
+// executes function getLS
 getLS();
 
