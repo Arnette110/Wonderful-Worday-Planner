@@ -4,7 +4,7 @@ This application is a day planner that allows the user to save events, via local
 
 
 ## URL to project
-https://arnette110.github.io/Wonderful-Worday-Planner/
+https://arnette110.github.io/Wonderful-Workday-Planner/
 
 ## Instructions
 - Once the page loads your are presented with the current date and time toward the top of the page and a list of color coded time slots below
